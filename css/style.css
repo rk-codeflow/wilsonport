@@ -5,3 +5,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/*****************
+    Navigation
+******************/
+nav {
+    padding: 1rem 3rem !important;
+    background: #fff;
+}
+
+nav ul li {
+    margin: 0 30px;
+}
+
+nav.navbar ul li a.nav-link {
+   font-family: 'Source Sans Pro', sans-serif;
+   font-weight: 900;
+   color: #949494 !important;
+   font-size: 18px;
+}
