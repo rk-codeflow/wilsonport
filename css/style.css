@@ -16,6 +16,36 @@
     text-transform: uppercase;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.heading {
+    font-family: 'Source Sans Pro',sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.heading_underline {
+    font-size: 42px;
+    color: grey;
+}
+
+h2.heading_underline::after {
+    content: '';
+    width: 50px;
+    height: 10px;
+    background: #000;
+}
+
+.para {
+    font-family: Roboto,sans-serif;
+    color: #aaa;
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 17px;
+}
 
 /*****************
     Navigation
@@ -91,4 +121,60 @@ nav.navbar ul li a.nav-link {
     padding: 15px 45px;
     border: 2px solid #fff;
     margin-left: 20px;
+}
+
+/*****************
+    Features
+******************/
+.features {
+    background: #f7f7f7;
+}
+
+.features .features__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+    transform: translateY(-70px);
+}
+
+.features__content .feature {
+    padding: 20px;
+    background: #fff;
+    border-right: 2px solid #f5f5f5;
+}
+
+.features__content .feature h4 {
+    color: #646464;
+    font-size: 30px;
+    padding-top: 40px;
+}
+
+.features__content .feature p {
+    padding-top: 10px;
+}
+
+/*****************
+    Features
+******************/
+
+.story .story__content {
+    display: flex;
+}
+
+.story .story__content .core-values {
+    background: url(../img/truck.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.story .story__content a.about__link {
+    color: grey;
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid grey;
+    font-weight: 600;
+    padding-bottom: .5rem;
+    letter-spacing: 1px;
+    font-size: 14px;
 }
