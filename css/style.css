@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 2000px;
+}
+
 
 /*****************
     Universal
@@ -34,9 +38,11 @@ img {
 
 h2.heading_underline::after {
     content: '';
-    width: 50px;
-    height: 10px;
-    background: #000;
+    width: 35px;
+    height: 5px;
+    background: #E11D07;
+    display: block;
+    margin: 15px 0;
 }
 
 .para {
@@ -45,6 +51,14 @@ h2.heading_underline::after {
     font-weight: 500;
     line-height: 1.7;
     font-size: 17px;
+}
+
+.pt-100 {
+    padding: 100px 0;
+}
+
+.bg-grey {
+    background: #f7f7f7;
 }
 
 /*****************
@@ -126,9 +140,7 @@ nav.navbar ul li a.nav-link {
 /*****************
     Features
 ******************/
-.features {
-    background: #f7f7f7;
-}
+
 
 .features .features__content {
     display: grid;
@@ -159,14 +171,33 @@ nav.navbar ul li a.nav-link {
 
 .story .story__content {
     display: flex;
+    justify-content: space-between;
+}
+
+.story .story__content .our-story {
+    width: 25%;
+    margin: 50px 0;
 }
 
 .story .story__content .core-values {
-    background: url(../img/truck.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 500px;
+    width: 70%;
 }
+
+.story .story__content .media {
+    background: url(../img/truck.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 80%;
+    height: 555px;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+}
+
+.story .our-story p {
+    /* width: 50%; */
+    max-width: 350px;
+}
+
 
 .story .story__content a.about__link {
     color: grey;
@@ -178,3 +209,38 @@ nav.navbar ul li a.nav-link {
     letter-spacing: 1px;
     font-size: 14px;
 }
+
+.story .story__content a.about__link:hover {
+    text-decoration: none;
+}
+
+
+.story .story__content .core-values .value {
+   display: flex;
+}
+
+.story .story__content .core-values .value .icon i {
+    
+    color: #00A300;
+    font-size: 28px;
+    position: relative;
+    top: 7px;
+    margin-right: 20px;
+}
+
+.story .core-values .core-values-content {
+    background: #fff;
+    width: 30%;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+    position: absolute;
+    top: 25%;
+    right: 14px;
+    padding: 40px 30px;
+}
+
+.story .core-values .core-values-content h4 {
+    color: #646464;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
