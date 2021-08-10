@@ -31,9 +31,15 @@ img {
     font-weight: 900;
 }
 
-.heading_underline {
+
+.heading_underline{
     font-size: 42px;
     color: grey;
+}
+
+.heading-secondary {
+    color: #646464;
+    font-size: 28px;
 }
 
 h2.heading_underline::after {
@@ -54,7 +60,7 @@ h2.heading_underline::after {
 }
 
 .pt-100 {
-    padding: 100px 0;
+    padding: 110px 0;
 }
 
 .bg-grey {
@@ -244,3 +250,34 @@ nav.navbar ul li a.nav-link {
     margin-bottom: 20px;
 }
 
+/*****************
+    Services
+******************/
+.services {
+    background: linear-gradient(rgba(225,29,7,.7),rgba(225,29,7,.7)),url(../img/truck-bg.jpg);
+    background-size: cover;
+}
+
+.services .services__content-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    margin-top: 40px;
+}
+.services .services__content-block .service {
+    display: flex;
+    background: #fff;
+    gap: 10px;
+    padding: 15px;
+}
+
+.services .services__content-block .services__icon {
+    margin: 25px 0;
+}
+
+.services .services__content-block .services__icon i {
+    border: 2px dashed #E11D07;
+    color: #E11D07;
+    padding: 20px 15px;
+    margin: 18px;
+}
