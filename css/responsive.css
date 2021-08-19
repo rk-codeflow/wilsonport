@@ -1,0 +1,52 @@
+
+/******* 1200px *****/
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    /** banner **/
+
+    .features .features__content {
+        transform: translateY(25px);
+        gap: 15px;
+    }
+
+    /** story **/
+    .story .our-story p {
+        max-width: 650px;
+    }
+
+    .story .story__content .our-story {
+        width: 100%;
+        margin: 50px 0;
+    }    
+
+    .story .story__content .media { 
+        height: 100%;
+        min-height: 500px;
+        width: 100%;
+    }
+
+     .story .core-values .core-values-content {    
+            position: absolute;
+            top: 40%;
+            right: 23px;
+            padding: 20px;
+            width: 40%;
+    }
+
+    /**** map ***/
+    .map .map__content .location {
+        padding: 50px 25px;
+    }
+
+    .map .map__content .location .location__details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+}
+
+
+/******* 76
+8px - 1200px *****/
+
