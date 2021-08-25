@@ -31,20 +31,34 @@
     
     <!-- Navbar starts -->
         
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar  navbar-expand-lg navbar-light">
         <a class="navbar-brand img-fluid" href="#"><img src="img/logo.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">    
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav  ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">HOME <span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu home" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item nav-link" href="#services">SERVICES</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-link" href="#stats">STATISTICS</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-link" href="#quotes">QUOTES</a>
+                </div>
             </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ABOUT</span></a>
+                <div class="dropdown-menu about" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item nav-link" href="#">OUR MESSAGE</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-link" href="#">TESTIMONIALS</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-link" href="#">GALLERY</a>
+                </div>
             </li>
 
             <li class="nav-item">
@@ -208,7 +222,7 @@
     <!-- story ends -->
 
     <!-- Services starts -->
-    <section class="services pt-100">
+    <section class="services pt-100" id="services">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -294,7 +308,7 @@
     <!-- Services Ends -->
 
     <!-- stat starts -->
-    <section class="stats pt-100">
+    <section class="stats pt-100" id="stats">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -356,7 +370,7 @@
     <!-- stat ends -->
 
     <!-- quote starts -->
-    <section class="quotes pt-100">
+    <section class="quotes pt-100" id="quotes">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-12">
@@ -489,7 +503,7 @@
 
 
     <!-- footer starts -->
-    <footer class="pt-100">
+    <footer>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
@@ -534,6 +548,12 @@
                             
                         </div>
                     </div>
+
+                    <!-- footer bottom -->
+                      <div class="footer__bottom">
+                          <p class="text-center">Copyright &copy; <span class="year">2021</span> All rights reseved | Website cloned by <span class="full_name"><a href="https://www.linkedin.com/in/raj-kiran-chaudhary-3443abbb/">Raj Kiran Chaudhary</a></span></p>
+                      </div>  
+                    <!-- footer bottom ends -->
                 </div>
             </div>
         </div>

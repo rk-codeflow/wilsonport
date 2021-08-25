@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
 /*****************
     Universal
 ******************/
@@ -13,6 +18,9 @@
     padding: 50px;
     min-width: 250px;
     text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 img {
@@ -28,7 +36,7 @@ img {
 
 
 .heading_underline{
-    font-size: 42px;
+    font-size: 2.625rem;
     color: grey;
 }
 
@@ -91,8 +99,14 @@ h2.heading_underline::after {
 /*****************
     Navigation
 ******************/
+
+
+.navbar-light .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+
 nav {
-    padding: 1rem 3rem !important;
+    padding: 15px;
     background: #fff;
 }
 
@@ -107,6 +121,22 @@ nav.navbar ul li a.nav-link {
    font-size: 18px;
 }
 
+nav ul li.dropdown .home {
+    position: absolute;
+    top: 56px;
+    margin-left: 5px;
+    min-width: 200px;
+    border-radius: 0;
+}
+
+nav ul li.dropdown .about {
+    position: absolute;
+    top: 56px;
+    margin-left: 5px;
+    min-width: 200px;
+    border-radius: 0;
+}
+
 /*****************
     Banner
 ******************/
@@ -119,7 +149,7 @@ nav.navbar ul li a.nav-link {
 }
 
 .banner__content {
-    padding: 10rem 2rem;
+    padding: 12rem 2rem;
 }
 
 .banner__content h1 {
@@ -144,24 +174,22 @@ nav.navbar ul li a.nav-link {
     padding: 10px 0;
 }
 
+.cta-btn {
+    display: flex;
+    gap: 10px;
+}
+
 .cta-btn .btn-1 {
     background: #e11d07;
     color: #fff;
     box-shadow: 0 6px 120px rgb(0 0 0 / 20%);
     border: 2px solid #e11d07;
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     padding: 15px 45px;
 }
 
 .cta-btn .btn-2 {
-    font-weight: 500;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     padding: 15px 45px;
     border: 2px solid #fff;
-    margin-left: 20px;
 }
 
 /*****************
@@ -410,6 +438,7 @@ nav.navbar ul li a.nav-link {
     font-family: Roboto,sans-serif;
     letter-spacing: 1px;
     border: 2px solid #fff;
+    min-width: unset;
 }
 
 /*****************
@@ -475,6 +504,7 @@ footer .footer__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
+    padding: 80px 0;
 }
 
 footer .footer ul li {
@@ -500,3 +530,27 @@ footer h5.footer-title {
 footer .footer img.footer-logo {
     margin-bottom: 10px;
 }
+
+footer .footer__bottom {
+    background: #f3f3f3;
+    padding: 35px 0;
+}
+
+footer .footer__bottom p {
+    color: rgb(150,150,150);
+    margin: 0;
+    font-weight: 500;
+} 
+
+footer .footer__bottom p span.full_name a {
+    color: #E11D07;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+
+/***********
+ABOUT PAGE
+************/
+
+

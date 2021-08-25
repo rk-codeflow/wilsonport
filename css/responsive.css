@@ -1,9 +1,85 @@
+/******* BELOW 768px *****/
+@media (max-width: 768px) {
+
+    /** banner **/
+    .banner__content {
+        padding: 5rem 1rem;
+    }
+
+    .banner__content h1 {   
+        font-size: 36px;
+        letter-spacing: 2px;
+        line-height: 1.3;
+    }
+
+    .features .features__content {
+        transform: translateY(25px);
+        gap: 15px;
+    }
+    
+    /** story **/
+    .story {
+        padding: 30px 0 10px 0;
+    }
+    .story .story__content {
+        flex-direction: column;
+    }
+
+    .story .story__content .our-story {
+        width: 80%;
+        margin: 35px 0;
+    }
+
+    .story .story__content .media {
+        background: url(../img/truck.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        width: 100%;
+        height: 555px;
+        box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+        margin-bottom: 230px;
+    }
+
+     .story .core-values .core-values-content {    
+        position: absolute;
+        top: 39%;
+        right: 23px;
+        padding: 10px;
+        width: 65%;
+    }
+
+    
+    /** features **/
+    .story .story__content .core-values {
+        width: 70%;
+    }
+
+    .cta-btn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .map .map__content .location {
+        padding: 35px 15px;
+    }
+}
+
+
 
 /******* 1200px *****/
 
 @media (min-width: 768px) and (max-width: 1200px) {
 
     /** banner **/
+
+    .banner__content h1 {
+        
+        font-size: 48px;
+        letter-spacing: 2px;
+        line-height: 1.5;
+    }
 
     .features .features__content {
         transform: translateY(25px);
@@ -27,11 +103,11 @@
     }
 
      .story .core-values .core-values-content {    
-            position: absolute;
-            top: 40%;
-            right: 23px;
-            padding: 20px;
-            width: 40%;
+        position: absolute;
+        top: 40%;
+        right: 23px;
+        padding: 20px;
+        width: 40%;
     }
 
     /**** map ***/
@@ -40,13 +116,11 @@
     }
 
     .map .map__content .location .location__details {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 10px;
-        }
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
 }
 
 
-/******* 76
-8px - 1200px *****/
 
