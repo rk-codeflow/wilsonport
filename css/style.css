@@ -769,5 +769,26 @@ ABOUT PAGE
 }
 
 
+/************
+    CAREER
+*************/
 
+.join-team {
+    padding: 5rem 0;
+}
 
+.career__banner {
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.join__msg {
+    margin-top: 40px;
+}
+
+.join__msg p {
+   margin: 20px 0;
+}

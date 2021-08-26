@@ -95,6 +95,26 @@
         right: 5%;
     }
 
+    .join-team .join__msg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .join-team .join__msg .join-pic {
+        width: 60%;
+        box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+    }
+
+    .join-team .join__msg .join-msg {
+        width: 35%;
+    }
+
+    .join-team .join__msg .join-pic img {
+        width: 100%;
+        object-fit: cover;
+    }
+
 }
 
 
