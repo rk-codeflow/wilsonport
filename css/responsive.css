@@ -68,6 +68,10 @@
     .review .reviews__sec .review__div {
         grid-column: 1 / -1;
     }
+
+    .team .team__members {
+        gap: 30px;
+    }
 }
 
 /******* 900px and up *****/

@@ -698,3 +698,76 @@ ABOUT PAGE
     clip-path: polygon(100% 0,0 0,50% 100%);
 }
 
+/************
+    TEAM
+*************/
+.team {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.team .team__members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.team .team__members .memb {
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+
+}
+
+.team .team__members .mem-pic {
+    height: 400px;
+}
+
+.team .team__members .mem-pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.team .team__members .mem-info {
+    background: #fff;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.team .team__members .mem-info h5 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #969696;
+    font-weight: 600;
+    font-size: clamp(0.85rem, 1.2vw, 2rem);
+}
+
+/************
+    GALLERY
+*************/
+.gallery {
+    background: #EEEEEE;
+    padding: 5rem 0;
+}
+
+.gallery .gallery__pics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.gallery .gallery__pics .pic {
+    height: 300px;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+}
+
+.gallery .gallery__pics .pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+
