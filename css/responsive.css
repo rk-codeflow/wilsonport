@@ -64,6 +64,33 @@
     .map .map__content .location {
         padding: 35px 15px;
     }
+
+    .review .reviews__sec .review__div {
+        grid-column: 1 / -1;
+    }
+}
+
+/******* 900px and up *****/
+
+@media (min-width: 900px) {
+
+    
+    .message .msg__content {
+        display: flex;
+    }
+
+    .message .msg__img {
+        width: 50%;
+        height: 35rem;
+    }
+
+    .msg__box {
+        width: 50%;
+        position: absolute;
+        top: 12%;
+        right: 5%;
+    }
+
 }
 
 

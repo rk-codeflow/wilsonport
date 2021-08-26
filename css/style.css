@@ -45,7 +45,7 @@ img {
     font-size: 28px;
 }
 
-h2.heading_underline::after {
+.heading_underline::after {
     content: '';
     width: 35px;
     height: 5px;
@@ -553,4 +553,148 @@ footer .footer__bottom p span.full_name a {
 ABOUT PAGE
 ************/
 
+.abt__banner {
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.abt__banner .banner__content {
+    padding: 8rem 2rem;
+}
+
+.message {
+    background: #eee;
+    padding: 5rem 0;
+}
+
+.message .msg__img {
+   box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+    height: 33rem;
+    margin-bottom: 1.5rem;
+}
+
+.message .msg__img img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   -o-object-fit: cover;
+}
+
+.message .msg__box {
+    padding: 3rem 3rem;
+    background: #fff;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+}
+
+.message .msg__box  p {
+    font-size: clamp(1.13rem, 1.2vw, 1.25rem);
+    color: #969696;
+}
+
+
+/************
+    REVIEW
+*************/
+.review {
+    background: linear-gradient(rgba(225,29,7,.7),rgba(225,29,7,.7)),url(../img/truck-bg.jpg);
+    padding: 5rem 0;
+}
+
+.review .reviews__sec {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.review .reviews__sec .review__1 {
+    grid-column: 1 / 7;
+}
+
+.review .reviews__sec .review__2 {
+    grid-column: 7 / -1;
+    grid-row: 2 / 3;
+}
+
+.review .reviews__sec  .review__3 {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+}
+
+.review .reviews__sec .review__4 {
+    grid-column: 7 / -1;
+    grid-row: 4 / 5;
+}
+
+.review .reviews__sec .review__div {
+    background: #fff;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.review .reviews__sec .review__div .client {
+    display: flex;
+}
+
+.review .reviews__sec .review__div .client .client-img img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.review .client-info {
+    margin-left: 15px;
+    font-family: 'Source Sans Pro',sans-serif;
+
+}
+
+.review .client-info h4.name {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #646464;
+}
+
+.review .client-info h6.designation {
+    color: #646464;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: clamp(0.85rem, 1.1vw, 1.5rem);
+}
+
+.review .reviews__sec .rating span {
+    width: 35px;
+    display: inline-block;
+    margin: 15px 5px 15px 0;
+
+}
+
+.review .reviews__sec  .client_words p {
+    color: #969696;
+    font-style: italic;
+    font-size: clamp(1rem, 1.1vw, 1.5rem);
+
+}
+
+.review .reviews__sec .review__div::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 25px;
+    background: #fff;
+    bottom: 0;
+    left: 3rem;
+    transform: translateY(100%);
+    -webkit-clip-path: polygon(100% 0,0 0,50% 100%);
+    clip-path: polygon(100% 0,0 0,50% 100%);
+}
 
