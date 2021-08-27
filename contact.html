@@ -55,9 +55,9 @@
                 <div class="dropdown-menu about" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item nav-link" href="#message">OUR MESSAGE</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-link" href="#review">TESTIMONIALS</a>
+                    <a class="dropdown-item nav-link" href="#">TESTIMONIALS</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-link" href="#gallery">GALLERY</a>
+                    <a class="dropdown-item nav-link" href="#">GALLERY</a>
                 </div>
             </li>
 
@@ -76,13 +76,13 @@
 
 
     <!-- Banner starts -->
-    <section class="career__banner">
+    <section class="abt__banner">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner__content">
-                        <h1 class="heading_underline">careers</h1>
-                        <p>We are a healthy and motivating place to work, and we take this really seriously and we solve logistics problems together</p>
+                        <h1 class="heading_underline">contact us</h1>
+                        <p>We love to get feedback and we will love to solve your problems. Contact us today and we will get back to you asap</p>
                     </div>
                 </div>
             </div>
@@ -90,83 +90,83 @@
     </section>
     <!-- Banner ends -->
 
-    <!-- join our team -->
-    <section class="join-team">
+    <!-- contact form starts -->
+    <section class="contact__form">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="join-team__content">
-                        <div class="join-team__title">
-                            <h2 class="heading heading_underline">join our team</h2>
-                        </div>
-
-                        <div class="join__msg">
-                            <div class="join-pic">
-                                <img src="img/careers.jpg" alt="">
-                            </div>
-                            <div class="join-msg">
-                                <h3 class="heading heading-secondary">wanna work with us?</h3>
-                                <p class="para">At Wilsonport, you will feel like part of a family and enjoy the many benefits that come with being a part of our team including great pay for every team member.</p>
-
-                                <p class="para">We are dedicated to taking care of our people and giving them the opportunity they deserve to achieve their goals.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- join our team ends -->
-
-    <!-- perks starts -->
-    <section class="perks">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="perks__content">
-                        <div class="perks__title">
-                            <h2 class="heading heading_underline">our perks</h2>
-                        </div>
-
-                        <div class="perks__div">
-                            <!-- one -->
-                            <div class="perk">
+                    <div class="contact__form-content">
+                        <div class="contact__left">
+                            <!-- first -->
+                            <div class="item loc">
                                 <div class="icon">
-                                    <i data-feather="coffee"></i>
+                                    <i data-feather="map-pin"></i>
                                 </div>
-                                <div class="perk-text">
-                                    <p class="para">Free delicious food and snacks for everyone.</p>
+                                <div class="loc-info">
+                                    <h5 class="heading">location</h5>
+                                    <p>Naas Rd, Littleconnell, <br>Newbridge, Ireland</p>
                                 </div>
                             </div>
 
                             <!-- two -->
-                            <div class="perk">
+                            <div class="item phone">
                                 <div class="icon">
-                                    <i data-feather="dollar-sign"></i>
+                                    <i data-feather="phone"></i>
                                 </div>
-                                <div class="perk-text">
-                                    <p class="para">Good pay so you don't have to worry financially.</p>
+                                <div class="loc-info">
+                                    <h5 class="heading">call</h5>
+                                    <p>+353 53 916 1144</p>
+                                    <p>+353 87 346 1035</p>
                                 </div>
                             </div>
 
                             <!-- three -->
-                            <div class="perk">
+                            <div class="item mail">
                                 <div class="icon">
-                                    <i data-feather="smile"></i>
+                                    <i data-feather="mail"></i>
                                 </div>
-                                <div class="perk-text">
-                                    <p class="para">Only 5 days of working so you are more free.</p>
+                                <div class="loc-info">
+                                    <h5 class="heading">mail</h5>
+                                    <p>admin@wilsonport.online</p>
+                                    <p></p>info@wilsonport.online</p>
                                 </div>
                             </div>
 
                             <!-- four -->
-                            <div class="perk">
+                            <div class="item fax">
                                 <div class="icon">
-                                    <i data-feather="shield"></i>
+                                    <i data-feather="printer"></i>
                                 </div>
-                                <div class="perk-text">
-                                    <p class="para">We provide free medical insurance for everyone.</p>
+                                <div class="loc-info">
+                                    <h5 class="heading">fax</h5>
+                                    <p>353-888-473-2963</p>
+                                    <p></p>353-852-251-6685</p>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="contact__right">
+                            <div class="contact__right-title">
+                                <h2 class="heading heading_underline">contact form</h2>
+                            </div>
+                            <div class="contact-form">
+                                <form class="contact-form" action="https://formspree.io/f/xpzoorrv" method="POST">
+                                    <div class="field">
+                                        <input name="name" placeholder="Name" type="text" class="cf-input" required="">
+                                    </div>
+
+                                    <div class="field">
+                                        <input name="email" placeholder="Email" type="text" class="cf-input" required="">
+                                    </div>
+
+                                    <div class="field">
+                                        <textarea name="message" placeholder="Message" type="text" rows="15" required="" autocomplete="off" spellcheck="false"></textarea>
+                                    </div>
+
+                                    <button class="btn btn-filled form-btn" type="submit">
+                                        Submit
+                                    </button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -174,26 +174,8 @@
             </div>
         </div>
     </section>
-    <!-- perks ends  -->
+    <!-- contact form ends -->
 
-    <!-- join us starts -->
-    <section class="join_us">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="join-us__content">
-                        <div class="join-us_title">
-                            <h2 class="heading heading_underline">wanna join us?</h2>
-                            <h6 class="">Come join us, we are looking for logistics experts with the right attitude and someone who can get the job done.</h6>
-                            <h6 class="">If you feel like you can be a great fit then send us your resume on <a href="#" class="mail">admin@wilsonport.online</a></h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- join us ends  -->
-   
     <!-- map starts -->
     <section class="map">
         <div class="container-fluid">
@@ -326,7 +308,8 @@
     <!-- footer ends -->
 
 
-    
+    <!-- script js -->
+    <script src="js/script.js"></script>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -342,8 +325,6 @@
 
     <!-- script js -->
     <script src="js/script.js"></script>
-
-    
     
 </body>
 </html>

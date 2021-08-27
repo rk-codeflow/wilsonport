@@ -8,7 +8,6 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 100%;
 }
 
 /*****************
@@ -121,20 +120,32 @@ nav.navbar ul li a.nav-link {
    font-size: 18px;
 }
 
-nav ul li.dropdown .home {
+nav ul li.dropdown .home,
+nav ul li.dropdown .about {
     position: absolute;
     top: 56px;
+    left: -64px;
     margin-left: 5px;
     min-width: 200px;
     border-radius: 0;
 }
 
-nav ul li.dropdown .about {
-    position: absolute;
-    top: 56px;
-    margin-left: 5px;
-    min-width: 200px;
-    border-radius: 0;
+nav ul li .dropdown-menu a.dropdown-item {
+    text-align: center;
+}
+
+nav ul li .dropdown-menu a.dropdown-item:active {
+    background: transparent;
+}
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    z-index: 9;
+    /* transition: background 900ms ease-in 0; */
 }
 
 /*****************
@@ -708,7 +719,7 @@ ABOUT PAGE
 
 .team .team__members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     margin-top: 40px;
 }
@@ -752,7 +763,7 @@ ABOUT PAGE
 
 .gallery .gallery__pics {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
     margin-top: 40px;
 }
@@ -777,6 +788,7 @@ ABOUT PAGE
     padding: 5rem 0;
 }
 
+
 .career__banner {
     color: #fff;
     background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/banner.jpg);
@@ -785,10 +797,140 @@ ABOUT PAGE
     background-position: center;
 }
 
+.career__banner .banner__content {
+    padding: 8rem 2rem;
+}
+
 .join__msg {
     margin-top: 40px;
 }
 
 .join__msg p {
    margin: 20px 0;
+}
+
+/************
+    CAREER
+*************/
+.perks {
+    padding: 5rem 0;
+    background: #EEEEEE;
+}
+
+.perks .perks__div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.perks .perks__div .perk {
+    background: #fff;
+    padding: 35px 45px;
+    box-shadow: 0 6px 120px rgb(0 0 0 / 10%);
+}
+
+.perks .perk .icon  {
+    height: 70px;
+    width: 70px;
+    border: dashed 2px #E11D07;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.perks .perk .icon svg {
+    color: #E11D07;
+    width: 100%;
+    height: 100%;
+}
+
+.perks .perk .perk-text {
+    margin-top: 25px;
+}
+
+.perks .perk-text p {
+    color: gray;
+}
+
+
+.join_us {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.join_us .join-us_title h2 {
+    margin-bottom: 30px;
+    font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.join_us .join-us_title h6 {
+    color: gray;
+}
+
+.join_us .join-us_title h6 a.mail {
+    color: #E11D07;
+}
+
+/************
+    CONTACT
+    FORM    
+*************/
+.contact__form .contact__left .item  {
+    margin-bottom: 10px;
+}
+
+.contact__form .contact__left .item .icon svg {
+    width: 50px;
+    height: 50px;
+}
+
+.contact__form {
+    padding: 5rem 0;
+    background: #eee;
+}
+
+.contact__form .contact__form-content .contact__left {
+    width: 40%;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.contact__form  .contact__right {
+    background: #fff;
+    padding: 60px 35px
+}
+
+.contact__right-title h2 {
+    margin-bottom: 45px;
+}
+
+
+.contact__form input,
+.contact__form textarea {
+    padding: 15px;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    font-size: 1rem;
+    font-family: Roboto,sans-serif;
+    letter-spacing: 1px;
+    outline: 0;
+}
+
+.contact__form .field {
+    margin-bottom: 15px;
+}
+
+.contact__form button.form-btn {
+    background: rgb(225, 29, 7);
+    color: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) 0px 6px 120px;
+    border: 2px solid rgb(225, 29, 7);
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 900;
+    letter-spacing: 1px;
 }

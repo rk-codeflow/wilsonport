@@ -72,13 +72,18 @@
     .team .team__members {
         gap: 30px;
     }
+
+     .join-msg {
+        margin-top: 30px;
+
+    }
+    
 }
 
 /******* 900px and up *****/
 
 @media (min-width: 900px) {
-
-    
+ 
     .message .msg__content {
         display: flex;
     }
@@ -93,6 +98,11 @@
         position: absolute;
         top: 12%;
         right: 5%;
+    }
+
+    .join-msg {
+        margin-top: 30px;
+
     }
 
     .join-team .join__msg {
@@ -113,6 +123,38 @@
     .join-team .join__msg .join-pic img {
         width: 100%;
         object-fit: cover;
+    }
+
+    /**************
+        CONTACT 
+    ***************/
+
+    .contact__form .contact__form-content .contact__left .item {
+        display: flex;
+    }
+
+     .contact__form  .contact__form-content {
+        display: flex;
+    }
+
+    .contact__form .contact__form-content .contact__left {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact__form .contact__form-content .contact__left .loc-info {
+        margin-left: 30px;
+    }
+
+    .contact__form .contact__form-content .contact__left .loc-info h5 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+     .contact__form .contact__form-content .contact__right {
+        width: 60%;
     }
 
 }
@@ -173,5 +215,13 @@
     }
 }
 
+/****************
+below 900px
+******************/
 
+@media (max-width: 899px) {
+   .contact__form .contact__form-content .contact__left {
+        display: none;
+    } 
+}
 
